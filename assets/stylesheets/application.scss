@@ -15,10 +15,9 @@ body {
   display: flex;
 }
 
-.map-container {
+.leaflet-container {
   height: 100vh;
   width: 40%;
-  position: sticky !important; /* !important to override Gmaps inline CSS */
   top: 0 !important;
 }
 
