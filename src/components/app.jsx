@@ -9,21 +9,26 @@ class App extends React.Component {
 
     this.state = {
       zoom: 8,
-      selectedFlat: 0
+      selectedFlat: [35.3292, 136.0563]
     };
+  }
+
+  selectFlat = (flat) => {
+    this.setState({ selectedFlat: flat})
   }
 
   render() {
     const centre = [35.3292, 136.0563]
     return(
       <div>
-        <FlatList flatList={flats} />
+        <FlatList flatList={flats} selectFlat={this.selectFlat} />
         <Map center={centre} zoom={this.state.zoom}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
           />
-          { flats.map(flat => <Marker key={flat.id} position={[flat.lat, flat.lng]}></Marker>) }
+          <Marker position={this.state.selectedFlat}>
+          </Marker>)
         </Map>
       </div>
     )

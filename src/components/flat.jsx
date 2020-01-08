@@ -12,6 +12,7 @@ class Flat extends React.Component {
 
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked })
+    this.props.selectFlat([this.props.lat, this.props.lng])
   }
 
   render() {
