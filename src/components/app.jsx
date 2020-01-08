@@ -8,27 +8,22 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      lat: 51.505,
-      lng: -0.09,
-      zoom: 13
+      zoom: 8,
+      selectedFlat: 0
     };
   }
 
   render() {
-    const position = [this.state.lat, this.state.lng]
+    const centre = [35.3292, 136.0563]
     return(
       <div>
         <FlatList flatList={flats} />
-        <Map center={position} zoom={this.state.zoom}>
+        <Map center={centre} zoom={this.state.zoom}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
           />
-          <Marker position={position}>
-            <Popup>
-              A pretty CSS3 popup. <br/> Easily customizable.
-            </Popup>
-          </Marker>
+          { flats.map(flat => <Marker key={flat.id} position={[flat.lat, flat.lng]}></Marker>) }
         </Map>
       </div>
     )

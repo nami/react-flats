@@ -1,12 +1,12 @@
 const flats = [
   {
     id: 1,
-    name: "Charm in the Gardens of Hokkaido",
+    name: "Charm in the Gardens of Mt Rokko",
     imageUrl: "https://raw.githubusercontent.com/nami/react-flats/master/assets/images/hokkaido.jpg",
     price: 16400,
     priceCurrency: "YEN",
-    lat: 48.884211,
-    lng: 2.34689
+    lat: 34.7780,
+    lng: 135.2637
   },
   {
     id: 2,
@@ -14,8 +14,8 @@ const flats = [
     imageUrl: "https://raw.githubusercontent.com/nami/react-flats/master/assets/images/kobe.jpg",
     price: 20000,
     priceCurrency: "YEN",
-    lat: 48.885707,
-    lng: 2.343543
+    lat: 34.689999,
+    lng: 135.195557
   },
   {
     id: 3,
@@ -23,8 +23,8 @@ const flats = [
     imageUrl: "https://raw.githubusercontent.com/nami/react-flats/master/assets/images/kyoto.jpg",
     price: 35000,
     priceCurrency: "YEN",
-    lat: 48.885312,
-    lng: 2.341225
+    lat: 35.0116,
+    lng: 135.7681
   },
   {
     id: 4,
@@ -32,17 +32,17 @@ const flats = [
     imageUrl: "https://raw.githubusercontent.com/nami/react-flats/master/assets/images/shirakawago.jpg",
     price: 41500,
     priceCurrency: "YEN",
-    lat: 48.88184,
-    lng: 2.343371
+    lat: 36.2710,
+    lng: 136.8986
   },
   {
     id: 5,
-    name: "Hidden Paradise in Okinawa",
+    name: "Hidden Paradise in Mie",
     imageUrl: "https://raw.githubusercontent.com/nami/react-flats/master/assets/images/okinawa.jpg",
     price: 13500,
     priceCurrency: "YEN",
-    lat: 48.888839,
-    lng: 2.339208
+    lat: 33.8144,
+    lng: 136.0487
   },
   {
     id: 6,
@@ -50,8 +50,8 @@ const flats = [
     imageUrl: "https://raw.githubusercontent.com/nami/react-flats/master/assets/images/osaka.jpg",
     price: 90,
     priceCurrency: "YEN",
-    lat: 48.827855,
-    lng: 2.350774
+    lat: 34.6937,
+    lng: 135.5023
   },
   {
     id: 7,
@@ -59,17 +59,17 @@ const flats = [
     imageUrl: "https://raw.githubusercontent.com/nami/react-flats/master/assets/images/nara.jpg",
     price: 10000,
     priceCurrency: "YEN",
-    lat: 48.827855,
-    lng: 2.350774
+    lat: 34.6851,
+    lng: 135.8048
   },
   {
     id: 8,
-    name: "東京品川から10分 - SLDK",
+    name: "名古屋駅から1分 - SLDK",
     imageUrl: "https://raw.githubusercontent.com/nami/react-flats/master/assets/images/tokyo.jpg",
     price: 15000,
     priceCurrency: "YEN",
-    lat: 48.827855,
-    lng: 2.350774
+    lat: 35.1815,
+    lng: 136.9066
   }
 ];
 
