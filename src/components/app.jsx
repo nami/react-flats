@@ -9,7 +9,7 @@ class App extends React.Component {
 
     this.state = {
       zoom: 8,
-      selectedFlat: [35.3292, 136.0563]
+      selectedFlat: [34.7780, 135.2637],
     };
   }
 
@@ -21,7 +21,7 @@ class App extends React.Component {
     const centre = [35.3292, 136.0563]
     return(
       <div>
-        <FlatList flatList={flats} selectFlat={this.selectFlat} />
+        <FlatList flatList={flats} selectFlat={this.selectFlat} selectCard={this.selectCard} />
         <Map center={centre} zoom={this.state.zoom}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
