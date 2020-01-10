@@ -20,13 +20,7 @@ class FlatList extends React.Component {
         { this.props.flatList
           .map(flat =>
             <Flat key={ flat.id }
-                  id={ flat.id }
-                  name={ flat.name }
-                  price={ flat.price }
-                  currency={ flat.priceCurrency }
-                  url={ flat.imageUrl }
-                  lat={ flat.lat }
-                  lng={ flat.lng}
+                  flat={ flat }
                   setClickedId={ this.setClickedId }
                   clickedId={ this.state.clickedId }
                   selectFlat={ this.props.selectFlat } />)}
