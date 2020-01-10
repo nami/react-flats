@@ -9,7 +9,7 @@ class App extends React.Component {
 
     this.state = {
       zoom: 8,
-      selectedFlat: [34.7780, 135.2637],
+      selectedFlat: [35.3292, 136.0563],
     };
   }
 
@@ -22,7 +22,9 @@ class App extends React.Component {
     return(
       <div>
         <FlatList flatList={flats} selectFlat={this.selectFlat} selectCard={this.selectCard} />
-        <Map center={centre} zoom={this.state.zoom}>
+
+        <div className="map">
+          <Map center={centre} zoom={this.state.zoom}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
@@ -30,6 +32,7 @@ class App extends React.Component {
           <Marker position={this.state.selectedFlat}>
           </Marker>)
         </Map>
+        </div>
       </div>
     )
   }
